@@ -14,35 +14,317 @@
 }
 
 .container  .esquerda img{
-    width: 60%;
+    width: 70%;
 }
 
 .container .direita{
     width: 50%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
 }
 
+.container .direita .titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f4866;
+    font-size: 18px;
+}
 
-.container .direita .input{
+
+.container .direita .input {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20%;
+    height: 30%;
     gap: 10px;
 }
 
-.container .direita .input input{
+.container .direita .input .inputs{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.container .direita .input .inputs input {
     width: 80%;
-    height:25%;
+    height:50%;
+    margin-left: 70px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid #a1a1a9;
+    background-color: white;
+    outline: none;
+    transition: all 300ms ease;
+    font-weight: bold;
+}
+
+.container .direita .input .inputs input:hover{
+    border: 2px solid #c12edc;
+}
+
+.container .direita .input .inputs input:focus{
+    border: 2px solid #ba68c8;
+}
+
+
+.container .direita .input label{
+    margin-left:90px ;
+    padding: 0px 5px 0px 5px;
+    color: #ba68c8;
+    font-weight: bold;
+    position: absolute;
+    top: 1;
+    margin-bottom: 45px;
+    background-color: white;
+}
+
+.container .direita .botao {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .direita .botao button {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #ba68c8;
+    color: white;
+    font-weight: bold;
+    transition: all 300ms ease;
+    font-size: 18px;
+}
+
+.container .direita .botao button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ba68c8;
+    border-radius: 15px;
+    border: 1px solid #ba68c8;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.container .direita .frase {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .direita .frase b{
+    position: relative;
+    background-color: white;
+    padding: 0px 25px;
+    color: #3f4866;
+    font-size: 18px;
+}
+
+.container .direita .frase hr{
+    width: 39%;
+    position: absolute;
 }
 
 .container .direita .icones{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 8%;
+}
+
+.container .direita .icones .face a {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.container .direita .icones .twiter a {
+    background-color: #1fbafd;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.container .direita .icones .istagran a {
+    background-color: #fe03a6;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.container .direita .icones .youtube a {
+    background-color: #fc4351;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .container .esquerda{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container  .esquerda img{
+        width: 60%;
+        height: 100%;
+    }
+
+    .container .direita{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container .direita .titulo {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #3f4866;
+        font-size: 11px;
+    }
+
+    
+    .container .direita .input .inputs{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    .container .direita .input .inputs input {
+        width: 70%;
+        height:70%;
+        padding-left: 5px;
+        margin-left: 0px;
+        border-radius: 10px;
+        border: 1px solid #a1a1a9;
+        background-color: white;
+        outline: none;
+        transition: all 300ms ease;
+        font-weight: bold;
+    }
+
+    .container .direita .input .inputs label{
+        display: none;
+    }
+
+    .container .direita .botao {
+        width: 100%;
+        height: 10%;
+    }
+
+    .container .direita .botao button {
+        width: 73%;
+        font-size: 12px;
+    }
+
+    .container .direita .botao button:hover {
+        cursor: none;
+        background-color: white;
+        color: #ba68c8;
+        border-radius: 15px;
+        border: 1px solid #ba68c8;
+        box-shadow: 0px 0px 20px 0px;
+    }    
+
+    .container .direita .frase b{
+        font-size: 12px;
+        padding: 0px 15px;    
+    }
+
+    .container .direita .frase hr{
+        width: 70%;
+    }
+
+    .container .direita .icones{
+        gap: 15px;
+    } 
+
+    .container .direita .icones .face a {
+        font-size: 130%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }    
+
+    .container .direita .icones .twiter a {
+        font-size: 130%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .container .direita .icones .istagran a {
+        font-size: 130%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .container .direita .icones .youtube a {
+        font-size: 130%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
 }
